@@ -8,10 +8,14 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-
-
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <img src="../../../assets/images/logos/autodos.jpg" id="img-logo-login"  width="350" height="200" />
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-button color="dark" shape="block" [routerLink]="['/choferes']">Ver choferes disponibles</ion-button>
+        </ion-item>
+      </ion-col>
+    </ion-row>
   </div>
 </ion-content>
