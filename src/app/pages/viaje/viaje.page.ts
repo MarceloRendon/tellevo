@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-viaje',
@@ -122,9 +123,12 @@ export class ViajePage implements OnInit {
   }
 ];
 
+destino: string;
+lugar: string;
+comuna: string;
+
   constructor() { }
 
   ngOnInit() {
   }
-
 }
