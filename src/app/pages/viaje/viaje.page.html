@@ -50,7 +50,9 @@
         <ion-col>
           <ion-item id="rounded">
             <ion-label position="stacked" class="ion-padding-bottom">Conductor:</ion-label>
-            <ion-input type="text" required name="conductor" ngModel></ion-input>
+            <ion-select placeholder="Seleccione conductor">
+              <ion-select-option *ngFor="let chofer of losChoferes" [value]="chofer.id">{{chofer.name}}</ion-select-option>
+            </ion-select>
           </ion-item>
         </ion-col>
       </ion-row>
@@ -60,14 +62,6 @@
           <ion-item>
             <ion-button shape="block">Enviar</ion-button>
             <ion-button color="secondary" shape="block" [routerLink]="['/home']">Volver a HOME</ion-button>
-          </ion-item>
-        </ion-col>
-      </ion-row>
-  
-      <ion-row>
-        <ion-col>
-          <ion-item>
-            <ion-button color="secondary" shape="block" [routerLink]="['/home']">Volver al HOME</ion-button>
           </ion-item>
         </ion-col>
       </ion-row>
