@@ -1,12 +1,48 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Restaurar</ion-title>
+    <ion-title>Recuperar</ion-title>
     <ion-buttons slot="start">
       <ion-menu-button menu="main-menu"></ion-menu-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content [fullscreen]="true">
+  <ion-content [fullscreen]="true">
+    <form action="" #formulario>
+      <ion-row>
+        <ion-col>
+          <ion-item id="rounded">
+            <ion-label floating>Usuario:</ion-label>
+            <ion-input type="text" required name="usuario" ngModel></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+  
+      <ion-row>
+        <ion-col>
+          <ion-item id="rounded">
+            <ion-label floating>Password:</ion-label>
+            <ion-input type="password" required name="password" ngModel></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+  
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-button shape="block">Restablecer</ion-button>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+  
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-button color="secondary" shape="block" [routerLink]="['/login']">Volver al login</ion-button>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </form>
+  </ion-content>
 </ion-content>

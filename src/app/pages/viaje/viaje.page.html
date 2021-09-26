@@ -7,6 +7,70 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true">
+  <ion-content [fullscreen]="true">
+    <form action="" #formulario>
+      <ion-row>
+        <ion-col>
+          <ion-item id="rounded">
+            <ion-label position="stacked" class="ion-padding-bottom">Destino:</ion-label>
+            <ion-input type="text" required name="destino" ngModel></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
 
+      <ion-row>
+        <ion-col>
+          <ion-item id="rounded">
+            <ion-label position="stacked" class="ion-padding-bottom">Lugar Encuentro:</ion-label>
+            <ion-input type="text" required name="lugar" ngModel></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+  
+      <ion-row>
+        <ion-col>
+          <ion-item id="rounded">
+            <ion-label position="stacked" class="ion-padding-bottom">Comuna:</ion-label>
+            <ion-input type="text" required name="comuna" ngModel></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-item id="rounded">
+            <ion-label position="stacked" class="ion-padding-bottom">Fecha:</ion-label>
+            <ion-input type="date" required name="fecha" ngModel></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-item id="rounded">
+            <ion-label position="stacked" class="ion-padding-bottom">Conductor:</ion-label>
+            <ion-input type="text" required name="conductor" ngModel></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-button shape="block">Enviar</ion-button>
+            <ion-button color="secondary" shape="block" [routerLink]="['/home']">Volver a HOME</ion-button>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+  
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-button color="secondary" shape="block" [routerLink]="['/home']">Volver al HOME</ion-button>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </form>
+  </ion-content>
 </ion-content>

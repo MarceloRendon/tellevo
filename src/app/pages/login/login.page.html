@@ -8,5 +8,39 @@
 </ion-header>
 
 <ion-content>
+  <form action="" #formulario>
+  <ion-row>
+    <ion-col>
+      <ion-item id="rounded">
+        <ion-label floating>Usuario:</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
 
+  <ion-row>
+    <ion-col>
+      <ion-item id="rounded">
+        <ion-label floating>Password:</ion-label>
+        <ion-input type="password" ></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <ion-item>
+        <ion-button shape="block" (click)="ingresar()">Ingresar</ion-button>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <ion-item>
+        <ion-button color="danger" shape="block" [routerLink]="['/restaurar']">Restablecer contraseña</ion-button>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+</form>
 </ion-content>
